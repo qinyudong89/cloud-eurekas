@@ -39,6 +39,7 @@
         </dependency>
     </dependencies>
 
+    <!--ss-->
     <dependencyManagement>
         <dependencies>
             <dependency>
