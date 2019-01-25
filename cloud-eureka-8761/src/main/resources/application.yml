@@ -6,6 +6,9 @@ eureka:
       defaultZone: http://59.110.214.126:8762/eureka/
     register-with-eureka: false #false表示不向注册中心注册自己。
     fetch-registry: false #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
+  server:
+    # 测试时关闭自我保护机制，保证不可用服务及时踢出
+    enable-self-preservation: false
 spring:
   application:
     name: cloud-eureka-8761
